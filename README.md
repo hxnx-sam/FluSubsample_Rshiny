@@ -16,7 +16,7 @@ This R Shiny App works on publically available Influenza virus sequence data dow
 https://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi?go=genomeset
 
 The data must be in FASTA format and fasta header of the data must be (use underscores to separate)
-> >{serotype}\_{host}\_{accession}\_{strain}\_{country}\_{year}/{month}/{day}\_{segname}
+> \>{serotype}\_{host}\_{accession}\_{strain}\_{country}\_{year}/{month}/{day}\_{segname}
 
 i.e. you must click 'Customize FASTA Def line' after composing your query and before downloading.
 
