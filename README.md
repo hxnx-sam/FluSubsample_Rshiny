@@ -15,8 +15,8 @@ This R Shiny App is intended to perform configurable stratified subsampling on s
 This R Shiny App works on publically available Influenza virus sequence data downloaded from the NCBI Influenza Virus Resource 
 https://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi?go=genomeset
 
-The data must be in FASTA format and fasta header of the data must be:\n
-'>{serotype}_{host}_{accession}_{strain}_{country}_{year}/{month}/{day}_{segname}'
+The data must be in FASTA format and fasta header of the data must be:
+>'>{serotype}_{host}_{accession}_{strain}_{country}_{year}/{month}/{day}_{segname}'
 
 i.e. you must click 'Customize FASTA Def line' after composing your query and before downloading.
 
