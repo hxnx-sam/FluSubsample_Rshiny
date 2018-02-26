@@ -1,0 +1,17 @@
+title=FluSubsample Rshiny App
+processing_date=2018-02-26 12:55:33
+upload_id=667540776642
+click_id=1
+input_filename=example_data.fas
+dataType=Whole Genome
+ntaxa=349
+nreps=1
+nper=3
+segment_subsamped=0
+time_category=Year
+space_category=State
+subtype_category=All
+host_processing=Known
+avian_host_processing=AvianHost4
+number_categories=14
+number_taxa_in_subsample=19

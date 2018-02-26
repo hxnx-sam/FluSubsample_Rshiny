@@ -1,0 +1,20 @@
+traits	Year	Location	Subtype	Host
+H5N5_Avian_EU871914_A/mallard/MN/105/2000|2000.500	2000	MN	H5N5	Wild-ans
+H5N5_Avian_GU727656_A/duck/Eastern_China/008/2008|2008.953	2008	Eastern China	H5N5	Dom-ans
+H5N5_Avian_GU727664_A/duck/Eastern_China/031/2009|2009.038	2009	Eastern China	H5N5	Dom-ans
+H5N5_Avian_JX878686_A/duck/HuBei/03/2010|2010.236	2010	HuBei	H5N5	Dom-ans
+H5N5_Avian_JQ973689_A/goose/Guangdong/k0103/2010|2010.071	2010	Guangdong	H5N5	Dom-ans
+H5N5_Avian_JQ973681_A/quail/Jiangsu/k0104/2010|2010.019	2010	Jiangsu	H5N5	Dom-gal
+H5N5_Avian_CY139838_A/mallard/Minnesota/355811/2000|2000.500	2000	Minnesota	H5N5	Wild-ans
+H5N5_Avian_CY091630_A/duck/Guangdong/wy11/2008|2008.427	2008	Guangdong	H5N5	Dom-ans
+H5N5_Avian_CY091638_A/duck/Guangdong/wy19/2008|2008.427	2008	Guangdong	H5N5	Dom-ans
+H5N5_Avian_CY091646_A/duck/Guangdong/wy24/2008|2008.427	2008	Guangdong	H5N5	Dom-ans
+H5N5_Avian_CY177264_A/mallard/California/1399/2013|2013.556	2013	California	H5N5	Wild-ans
+H5N5_Avian_CY177394_A/mallard/California/1495/2013|2013.575	2013	California	H5N5	Wild-ans
+H5N5_Avian_CY177306_A/mallard/California/1426/2013|2013.556	2013	California	H5N5	Wild-ans
+HXNX_Avian_CY177167_A/mallard/California/1367/2013|2013.553	2013	California	HXNX	Wild-ans
+HXNX_Avian_CY177289_A/mallard/California/1412/2013|2013.556	2013	California	HXNX	Wild-ans
+HXNX_Avian_CY176983_A/mallard/California/1479/2013|2013.575	2013	California	HXNX	Wild-ans
+H5N5_Avian_MF359842_A/mallard/Alberta/383/2009|2009.638	2009	Alberta	H5N5	Wild-ans
+H5N5_Avian_KJ907650_A/duck/Liaoning/LN/2011|2011.162	2011	Liaoning	H5N5	Dom-ans
+H10N5_Avian_MG599673_A/ruddy_turnstone/Delaware_Bay/342/2016|2016.392	2016	Delaware Bay	H10N5	Wild-other
