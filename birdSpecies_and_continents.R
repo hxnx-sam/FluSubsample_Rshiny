@@ -641,6 +641,7 @@ isProvinceOfChina	<- function( place, return.places=FALSE ) {
 # 8 May 2015 - updated
 # 4 Feb 2016 - updated
 # 25 Mar 2016 - updated
+# 5 April 2018 - updated (with PRRSV info)
 getProvinceOfChina <- function( places ) {
 	pc 		<- isProvinceOfChina( places )
 
@@ -651,17 +652,19 @@ getProvinceOfChina <- function( places ) {
 
 	Jiangsu 	<- c(	"Jiawang","Nanjing","Qianzhou",
 				"Taixing","Taizhou","Tongshan","Wuxi","Xiangshui","Xuzhou","Hongze",
-				"Yangzhou","Shuanggou","Xigou","Xuyi","Suzhou","Changzhou","Sheyang","Yanchen","Yan_chen","Suzhou")		# not sure about Shuanggou or Xigou
+				"Yangzhou","Shuanggou","Xigou","Xuyi","Suzhou","Changzhou",
+				"Sheyang","Yanchen","Yan_chen","Suzhou",
+				"Nantong","Siyang")		# not sure about Shuanggou or Xigou
 
 	Jiangxi 	<- c("Nanchang","Zhenjiang")
 	Henan	  	<- c("Kaifeng","Qixian","Yongcheng","Shangqiu","Xuchang","Anyang")		# not sure about Qixian
 	Yunnan  	<- c("Kuming","Kunming")
-	Guangdong 	<- c("Shantou","Zhuhai","Shenzhen","Guangzhou","Huizhou","Dongguan")
+	Guangdong 	<- c("Shantou","Zhuhai","Shenzhen","Guangzhou","Huizhou","Dongguan","Qingyuan","Foshan")
 	Hebei		<- c("Shijiazhuang")
 	Hubei		<- c("Chibi","Wuhan")
 	Shanghai	<- c("Xianghai")
 	Fujian	<- c("Zhangzhou")
-	Shandong	<- c("Zibo","Rizhao","Qingdao","Yantai","Jinan","Laiwu","Chiping")
+	Shandong	<- c("Zibo","Rizhao","Qingdao","Yantai","Jinan","Laiwu","Chiping","Binzhou","Jinan")
 	Shaanxi	<- c("Dawang")
 	Guangxi	<- c("SanJiang","Sanjiang","San_Jiang")				# not sure about SanJiang
 	Heilongjiang<- c("ZhaLong","Mudanjiang")
@@ -673,13 +676,15 @@ getProvinceOfChina <- function( places ) {
 	Liaoning	<- c("Shenyan","Sheny")					# just guessing Sheny==Shenyan
 	Sichuan	<- c("Juxian")
 	Gansu		<- c("Sunan")
+	Xinjiang	<- c("Urumqi")
 
 	provinces	<- list( Anhui=Anhui, Guizhou=Guizhou, Zhejiang=Zhejiang, HongKong=HongKong,
 				   Jiangsu=Jiangsu, Jiangxi=Jiangxi, Henan=Henan, Yunnan=Yunnan,
 				   Guangdong=Guangdong, Hebei=Hebei, Hubei=Hubei, Shanghai=Shanghai, Fujian=Fujian,
 				   Shandong=Shandong, Shaanxi=Shaanxi, 
 				   Guangxi=Guangxi, Heilongjiang=Heilongjiang, Hunan=Hunan,
-				   Mongolia=Mongolia, Liaoning=Liaoning, Sichuan=Sichuan, Gansu=Gansu )
+				   Mongolia=Mongolia, Liaoning=Liaoning, Sichuan=Sichuan, Gansu=Gansu,
+				   Xinjiang=Xinjiang )
 
 	provs			 <- array("-", length(places))
 	#provs[ which(pc) ] <- places[ which(pc) ]
