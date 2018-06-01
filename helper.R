@@ -9,6 +9,7 @@
 # helper function for FluSubsample server
 # S J Lycett
 # 17 Feb 2018
+# 1 June 2018 - nper = 0 means dont do any subsampling
 
 # load other R functions (Sam standard functions)
 #source("getEl.R")
@@ -318,20 +319,25 @@ getSegInds <- function( segNumber=1, tbl=tbl, genome_tbl=c(-1)) {
 }
 
 getSubsampledInds <- function(jointTrait, joint_inds, nper) {
-  ujointTrait <- unique(jointTrait[joint_inds])
-  num_uj      <- length(ujointTrait)
-  selinds     <- c()
-  for (j in 1:num_uj) {
-    kk <- which(jointTrait[joint_inds]==ujointTrait[j])
-    if (length(kk) > 0) {
-      kk <- joint_inds[kk]
-      if (length(kk) > nper) {
-        kk <- sample(kk, nper)
+  if (nper == 0) {
+    print("Nper=0 - not doing any subsampling")
+    return ( joint_inds )
+  } else {
+    ujointTrait <- unique(jointTrait[joint_inds])
+    num_uj      <- length(ujointTrait)
+    selinds     <- c()
+    for (j in 1:num_uj) {
+      kk <- which(jointTrait[joint_inds]==ujointTrait[j])
+      if (length(kk) > 0) {
+        kk <- joint_inds[kk]
+        if (length(kk) > nper) {
+          kk <- sample(kk, nper)
+        }
+        selinds <- c(selinds,kk)
       }
-      selinds <- c(selinds,kk)
     }
+    return( selinds )
   }
-  return( selinds )
 }
 
 renameSeqs <- function(seqs=seqs, tbl=tbl) {
